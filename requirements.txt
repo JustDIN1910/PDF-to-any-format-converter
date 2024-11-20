@@ -1,0 +1,6 @@
+Flask - A web framework for building web applications.
+pdfplumber - A library to extract text, tables, and metadata from PDF files.
+pandas - A data analysis and manipulation library, required for handling tables extracted from PDFs and saving them in Excel format.
+openpyxl - A library to read/write Excel files, used here to write the extracted data to Excel files.
+python-docx - A library for creating and modifying Word documents, used for saving PDF content as .docx.
+pdf2image - A library to convert PDF pages into images. This may not be strictly necessary unless you intend to add image generation features in the future (e.g., to generate thumbnails from PDFs).

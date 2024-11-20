@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>PDF Converter</title>
+</head>
+<body>
+    <div class="background">
+        <div class="floating-box">
+            <h2 class="text-center">PDF to Multiple Formats Converter</h2>
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="pdf_file" class="form-label">Upload PDF File</label>
+                    <input class="form-control" type="file" id="pdf_file" name="pdf_file" accept=".pdf" required>
+                </div>
+                <div class="mb-3">
+                    <label for="output_format" class="form-label">Select Output Format</label>
+                    <select class="form-select" id="output_format" name="output_format" required>
+                        <option value="excel">Excel</option>
+                        <option value="word">Word</option>
+                        <option value="text">Text</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Convert</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
